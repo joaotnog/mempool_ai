@@ -142,6 +142,8 @@ venv.bak/
 
 # data
 /data
+/ai/tuning_results
+/ai/models
 
 # mypy
 .mypy_cache/
