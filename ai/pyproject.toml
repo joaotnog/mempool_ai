@@ -11,6 +11,9 @@ dependencies = [
     "sklearn>=0.0.post12",
     "scikit-learn>=1.5.0",
     "keras-tuner>=1.4.7",
+    "shap>=0.45.1",
+    "matplotlib>=3.9.0",
+    "ipykernel>=6.29.4",
 ]
 requires-python = "==3.11.*"
 readme = "README.md"

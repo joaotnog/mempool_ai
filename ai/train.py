@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import joblib
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Model
@@ -111,3 +112,15 @@ print(f"Test Loss: {loss}, Test Accuracy: {accuracy}")
 
 # Save the model
 best_model.save('models/best_transformer_mev_model.h5')
+# Save the scaler
+joblib.dump(scaler, 'models/scaler.pkl')
+
+# Save the feature names
+with open('models/feature_names.txt', 'w') as f:
+    for feature in features:
+        f.write(f"{feature}\n")
+
+# Save the test data
+np.save('models/X_test.npy', X_test)
+np.save('models/y_test.npy', y_test)
+
