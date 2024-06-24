@@ -13,8 +13,8 @@
 
 4. **Model Explainability and Feature Importance**
    Extracts and visualizes the model's explainability and feature importance.
-
-   - **Feature Importance:**
-     ![Feature Importance](assets/mempool_feat_importance.png)
    - **Model Explainability Report:**
      [Model Explainability Plots](ai/model_explainability_plots.ipynb)
+   - **Feature Importance:**
+     ![Feature Importance](assets/mompool_feat_importance.png)
+
